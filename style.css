@@ -101,12 +101,23 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
-  background-color: #0f0f0f;
+  /* background-color: #0f0f0f; */
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+}
+
+#navbar.navbar--dark { 
+  background-color: #0f0f0f;
+  padding: 4px;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 999;
 }
 
 .navbar__menu {
@@ -143,7 +154,7 @@ p {
   background: url(./images/background-guitar.png) center/cover no-repeat; */
   padding: 40px;
   text-align: center;
-  padding: 40px 0;
+  padding: 120px 0;
 }
 
 .home__pic {
