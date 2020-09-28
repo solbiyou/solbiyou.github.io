@@ -443,7 +443,7 @@ p {
 }
 
 #contact {
-  background-color: var(--color-pink);
+  background-color: #0f0f0f;
 
 }
 
@@ -472,9 +472,9 @@ p {
 .navbar__toggle_btn {
   color: var(--color-white);
   position: absolute;
-  right: 32px;
+  right: 12px;
   font-size: 24px;
-  /* top: 24px; */
+  top: 8px;
   display: none;
   /* opacity 는 클릭이 됨** */
 }
@@ -483,8 +483,6 @@ p {
 @media screen and (max-width: 768px) {
   .navbar__toggle_btn {
     display: block;
-
-
   }
 
   #navbar {
