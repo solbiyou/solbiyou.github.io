@@ -457,3 +457,55 @@ p {
   transition: all var(--animation-duration) ease-in;
 
 }
+
+.navbar__toggle_btn {
+  color: var(--color-white);
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  /* top: 24px; */
+  display: none;
+  /* opacity 는 클릭이 됨** */
+}
+
+/* For below 768 screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle_btn {
+    display: block;
+
+
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+  .major__icon {
+    margin: auto;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .project {
+    flex-grow: 1;
+  }
+  .testimonial__face {
+    width: 80px;
+    height: 80px;
+  }
+}
