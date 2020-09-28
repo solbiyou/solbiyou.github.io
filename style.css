@@ -518,3 +518,18 @@ p {
     height: 80px;
   }
 }
+
+.fa-arrow-circle-up {
+  /* position: absolute; */
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  color: var(--color-dark-grey);
+  font-size: 48px;
+  /* opacity: 0; */
+  cursor: pointer;
+  display: none;
+  /* cursor: none; */
+  /* or use pointer-events: none */
+} 
+

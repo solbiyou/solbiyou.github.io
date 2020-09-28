@@ -41,8 +41,22 @@ document.addEventListener('scroll', () => {
 });
 
 
+//bringup the arrow button
+const arrowbtn = document.querySelector(".fa-arrow-circle-up");
+arrowbtn.addEventListener('click', () => {
+  //arrowbtn.style.opacity = window.scrollY / homeHeight;
+  scrollIntoView('#home');
+});
 
-
+document.addEventListener('scroll', () => {
+  arrowbtn.style.opacity = window.scrollY / (homeHeight*2);
+  if (window.scrollY > homeHeight/2) {
+    arrowbtn.style.display = "block";
+  }
+  else {
+    arrowbtn.style.display = "none";
+  }
+});
 
 
 function scrollIntoView(selector) {
