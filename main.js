@@ -14,8 +14,10 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Handle scrolling when tapping on the navbar menu
 
+
+
+// Handle scrolling when tapping on the navbar menu\
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
@@ -23,8 +25,16 @@ navbarMenu.addEventListener('click', (event) => {
   if (link === null) {
     return;
   }
+  navbarMenu.classList.remove('open');
+
   scrollIntoView(link);
 
+});
+
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle_btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 //click on contact me to move to contact part
@@ -69,9 +79,14 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter === null) {
     return;
   }
-  projectContainer.classList.add('animation-out');
 
-  // let project;
+  //remove selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.active');
+  active.classList.remove('active');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
+  projectContainer.classList.add('animation-out');
 
   setTimeout(() => {
     projects.forEach((project) => {
