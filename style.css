@@ -151,7 +151,7 @@ p {
 
 #home {
   /* background-color: var(--color-primary); */
-  background: url(./images/background-guitar.png) center/cover no-repeat; */
+  background: url(./images/background-guitar.png) center/cover no-repeat; 
   padding: 40px;
   text-align: center;
   padding: 120px 0;
@@ -311,17 +311,18 @@ p {
 }
 .category__btn.active,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: #0f0f0f;
   color: var(--color-white);
 }
 .category__btn.active .category__num,
 .category__btn:hover .category__num {
   opacity: 1;
   top: 0;
+  z-index: 1;
 }
 .category__num {
-  background-color: var(--color-orange);
-  border: 1px soild var(--color-orange);
+  background-color: var(--color-primary);
+  border: 1px soild var(--color-primary);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -339,6 +340,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.animation-out {
+  opacity: 0; 
+  transform: scale(0.9) translateY(40px);
 }
 
 .project {
@@ -350,6 +358,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 .project__img {
   max-width: 100%;
