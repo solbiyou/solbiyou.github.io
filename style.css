@@ -65,6 +65,8 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  /* for iphone users */
+  padding: 0; 
 }
 
 
@@ -117,7 +119,7 @@ p {
   background-color: #0f0f0f;
   padding: 4px;
   transition: all var(--animation-duration) ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar__menu {
@@ -175,6 +177,10 @@ p {
   border-radius: 4px;
 } 
 
+.home__contact:hover {
+  background-color: var(--color-primary);
+}
+
 /* Section common */
 
 .section {
@@ -196,6 +202,8 @@ p {
   margin: 80px 0;
 
 }
+
+
 
 .major__icon {
   width: 170px;
@@ -303,7 +311,7 @@ p {
   border-radius:  var(--size-border-radious);
   font-size: var(--font-regular);
   padding: 8px 48px;
-
+  position: relative;
 }
 .category__btn.active,
 .category__btn:hover {
@@ -313,21 +321,21 @@ p {
 .category__btn.active .category__num,
 .category__btn:hover .category__num {
   opacity: 1;
-  top: 0;
+  top: 5px;
   z-index: 1;
 }
 .category__num {
   background-color: var(--color-primary);
   border: 1px soild var(--color-primary);
   border-radius: 50%;
-  color: var(--color-white);
+  color: var(--color-grey);
   width: 24px;
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 12px;
   opacity: 0;
   transition: all var(--animation-duration) ease;
 }
@@ -489,6 +497,30 @@ p {
 
 /* For below 768 screen width */
 @media screen and (max-width: 768px) {
+  :root {
+
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 28px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+    --size-border-radious: 4px;
+
+    /* Animation duration */
+    --animation-duration: 300ms;
+
+
+  }
+
+  
   .navbar__toggle_btn {
     display: block;
   }
@@ -497,6 +529,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     background-color: #0f0f0f;
+    padding: 4px;
 
   }
   /* #navbar.navbar--dark {
@@ -515,6 +548,8 @@ p {
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .major {
@@ -526,12 +561,36 @@ p {
   .skillset {
     flex-direction: column;
   }
+  .category__btn {
+    margin: 4px 0;
+    width: 80%;
+  }
+
+
   .project {
     flex-grow: 1;
   }
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
   .testimonial__face {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+  .testimonial__face:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .testimonial__face:nth-child(even) {
+    margin-left: 0;
+    order: -1;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 28px;
   }
 }
 
