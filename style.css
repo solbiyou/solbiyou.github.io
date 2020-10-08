@@ -483,7 +483,9 @@ p {
   font-size: var(--font-large);
   margin: 24px 0;
 }
-
+.contact__links a {
+  margin: 0 4px;
+}
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-orange);
