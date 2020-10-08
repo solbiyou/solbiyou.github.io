@@ -17,6 +17,7 @@
   --color-primary: #eceff1;
   --color-light: #ffffff;
   --color-dark: #babdbe;
+  --color-main: #F8914D;
 
   /* Font size */
   --font-large: 48px;
@@ -141,7 +142,9 @@ p {
 
 
 .navbar__menu__item:hover {
-  background-color:var(--color-primary);
+  background-color:var(--color-orange);
+  transform: scale(1.1);
+  transition: all var(--animation-duration) ease-in;
 }
 
 
@@ -156,10 +159,10 @@ p {
 }
 
 .home__pic {
-  width: 250px;
-  height: 250px;
-  border-radius: 20%;
-  border: 2px solid var(--color-white);
+  width: 300px;
+  height: 280px;
+  border-radius: 40%;
+  border: 5px solid var(--color-orange);
 }
 
 .home__title,
@@ -178,7 +181,7 @@ p {
 } 
 
 .home__contact:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-orange);
 }
 
 /* Section common */
@@ -216,7 +219,7 @@ p {
   margin-bottom: 16px;
 }
 .major__icon:hover i{
-  color: var(--color-pink);
+  color: var(--color-orange);
   transform: rotate(10deg) scale(1.1);
 }
 .major__icon i {
@@ -318,17 +321,17 @@ p {
 }
 .category__btn.active,
 .category__btn:hover {
-  background-color: #0f0f0f;
+  background-color: var(--color-orange);
   color: var(--color-white);
 }
 .category__btn.active .category__num,
 .category__btn:hover .category__num {
   opacity: 1;
-  top: 5px;
+  top: 6px;
   z-index: 1;
 }
 .category__num {
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   border: 1px soild var(--color-primary);
   border-radius: 50%;
   color: var(--color-grey);
@@ -337,7 +340,7 @@ p {
   display: inline-block;
   line-height: 24px;
   position: absolute;
-  top: -20px;
+  top: -21px;
   right: 12px;
   opacity: 0;
   transition: all var(--animation-duration) ease;
@@ -483,9 +486,14 @@ p {
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: var(--color-orange);
   transition: all var(--animation-duration) ease-in;
 
+}
+.contact__email a:hover {
+  color: var(--color-orange);
+  font-size: 2rem;
+  transition: all var(--animation-duration) ease-in;
 }
 
 .navbar__toggle_btn {
@@ -596,6 +604,8 @@ p {
     padding-top: 28px;
   }
 }
+
+
 
 .fa-arrow-circle-up {
   /* position: absolute; */
