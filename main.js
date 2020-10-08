@@ -75,8 +75,8 @@ const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter; //if undefined, ues the one on the right
-  
-  if(filter === null) {
+  console.log(filter);
+  if (filter === null || filter === undefined) {
     return;
   }
 

@@ -149,7 +149,7 @@ p {
 
 #home {
   /* background-color: var(--color-primary); */
-  background: url(./images/background-guitar.png) center/cover no-repeat; 
+  background: url(./images/background-road.png) center/cover no-repeat; 
   padding: 40px;
   text-align: center;
   padding: 120px 0;
@@ -158,7 +158,7 @@ p {
 .home__pic {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 2px solid var(--color-white);
 }
 
@@ -270,6 +270,7 @@ p {
 
 .skillset__title {
   color: var(--color-white);
+  font-size: 20px;
 }
 .skillset__right {
   flex-basis: 40%;
@@ -313,6 +314,7 @@ p {
   font-size: var(--font-regular);
   padding: 8px 48px;
   position: relative;
+
 }
 .category__btn.active,
 .category__btn:hover {
