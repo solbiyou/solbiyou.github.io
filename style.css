@@ -612,7 +612,7 @@ p {
   position: fixed;
   bottom: 16px;
   right: 16px;
-  color: var(--color-dark-grey);
+  color: var(--color-orange);
   font-size: 48px;
   /* opacity: 0; */
   cursor: pointer;
