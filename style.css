@@ -213,13 +213,13 @@ p {
   height: 170px;
   line-height: 170px;
   font-size: 70px;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
   border-radius: 50%;
   margin-bottom: 16px;
 }
 .major__icon:hover i{
-  color: var(--color-orange);
+  color: var(--color-main);
   transform: rotate(10deg) scale(1.1);
 }
 .major__icon i {
@@ -315,8 +315,11 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius:  var(--size-border-radious);
   font-size: var(--font-regular);
+  color: var(--color-dark-white);
   padding: 8px 48px;
   position: relative;
+  width: 180px;
+  background-color: var(--color-black);
 
 }
 .category__btn.active,
@@ -461,7 +464,7 @@ p {
 }
 
 .testmonial__speech-bubble a {
-  color: var(--color-dark-pink);
+  color: var(--color-orange);
 }
 
 #contact {
