@@ -371,6 +371,7 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+  margin: 20px;
 }
 
 .project.invisible {
