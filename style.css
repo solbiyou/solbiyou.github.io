@@ -125,7 +125,7 @@ p {
 
 .navbar__menu {
   display: flex;
-
+  margin-right: 12px;
 }
 
 .navbar__logo {
@@ -138,6 +138,7 @@ p {
   cursor: pointer;
   border-radius: var(--size-border-radious);
   line-height: 24px;
+  /* height: 1; */
 }
 
 
@@ -558,6 +559,7 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+    /* margin-right: px; */
   }
 
   .navbar__menu.open {
