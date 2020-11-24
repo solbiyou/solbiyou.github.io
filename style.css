@@ -157,6 +157,7 @@ p {
   padding: 40px;
   text-align: center;
   padding: 120px 0;
+  
 }
 
 .home__pic {
@@ -164,6 +165,7 @@ p {
   height: 250px;
   border-radius: 40%;
   border: 2px solid var(--color-orange);
+  transition: all var(--animation-duration) ease-in;
 }
 
 .home__title,

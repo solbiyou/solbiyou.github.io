@@ -42,6 +42,19 @@ const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', (event) => {
   scrollIntoView('#contact');
 });
+//change the photo when hover over the contact 
+const avartarElem = document.querySelector('.home__pic');
+
+
+contactBtn.addEventListener('mouseover', () => {
+  avartarElem.setAttribute('src', "./images/linkedin.JPEG");
+});
+
+contactBtn.addEventListener('mouseout', () => {
+  avartarElem.setAttribute('src', "./images/avatar.JPEG");
+})
+
+
 
 // make home slowly fade to tranparent as scrolled down
 const home = document.querySelector('.home__container');
@@ -110,4 +123,5 @@ function scrollIntoView(selector) {
     behavior: 'smooth'
   });
 }
+
 
