@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 /* Global */
 
 :root {
@@ -175,12 +177,15 @@ p {
 
 .home__contact {
   color: var(--color-white);
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-bold);
   margin: 24px;
+  margin-top: 48px;
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.5px;
 } 
 
 .home__contact:hover {
@@ -521,7 +526,7 @@ p {
   :root {
 
     /* Font size */
-    --font-large: 30px;
+    --font-large: 38px;
     --font-medium: 28px;
     --font-regular: 16px;
     --font-small: 14px;
@@ -541,7 +546,9 @@ p {
 
   }
 
-  
+  .home__contact {
+    font-size: 24px;
+  }
   .navbar__toggle_btn {
     display: block;
   }
