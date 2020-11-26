@@ -121,7 +121,7 @@ p {
 #navbar.navbar--dark { 
   background-color: #0f0f0f;
   padding: 4px;
-  transition: all var(--animation-duration) ease-in-out;
+  /* transition: all 3s ease-in-out; */
   z-index: 2;
 }
 
@@ -185,11 +185,15 @@ p {
   border: 2px solid var(--color-white);
   border-radius: 4px;
   font-family: 'Ubuntu', sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 } 
 
 .home__contact:hover {
   background-color: var(--color-orange);
+}
+
+.home__name:hover {
+  color: var(--color-orange);
 }
 
 /* Section common */
