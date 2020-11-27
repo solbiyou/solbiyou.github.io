@@ -185,7 +185,7 @@ p {
   border: 2px solid var(--color-white);
   border-radius: 4px;
   font-family: 'Ubuntu', sans-serif;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
 } 
 
 .home__contact:hover {
