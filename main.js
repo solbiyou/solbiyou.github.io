@@ -42,6 +42,7 @@ const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', (event) => {
   scrollIntoView('#contact');
 });
+
 //change the photo when hover over the contact 
 const avartarElem = document.querySelector('.home__pic');
 
