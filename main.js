@@ -48,7 +48,7 @@ const avartarElem = document.querySelector('.home__pic');
 
 
 contactBtn.addEventListener('mouseover', () => {
-  avartarElem.setAttribute('src', "./images/linkedin.JPEG");
+  avartarElem.setAttribute('src', "./images/contactFace.jpeg");
 });
 
 contactBtn.addEventListener('mouseout', () => {
