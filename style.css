@@ -321,6 +321,11 @@ p {
 }
 
 /* Work */
+
+#work {
+  /* background-color: var(--color-light-white); */
+
+}
 .work__categories {
   margin: 40px;
 }
